@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>기업 공고글 쓰기 페이지</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -64,15 +64,12 @@
         </nav>
         <!-- Body-->
         <div class="container mt-3">
-            <h2>회사명(DB에서 값 가져오기)</h2>
+            <h2>기업명</h2>
             <form action="/action_page.php">
-                <div class="mb-3 mt-3">
-                    <input type="title" class="form-control" id="title" placeholder="제목" name="title">
-                </div>
                 <div class="flex">
                     <div>
                         <div>
-                            연봉 : <select>
+                            급여 : <select>
                                 <option selected="selected">2천</option>
                                 <option>4천</option>
                                 <option>5천</option>
@@ -80,16 +77,16 @@
                             </select>
                         </div>
                         <div>
-                            근무일 : <select>
-                                <option selected="selected">주5일</option>
-                                <option>주6일</option>
-                            </select>
-                        </div>
-                        <div>
                             학력 : <select>
                                 <option selected="selected">고졸</option>
                                 <option>대졸</option>
                                 <option>2,3년대</option>
+                            </select>
+                        </div>
+                        <div>
+                            경력 : <select>
+                                <option selected="selected">신입</option>
+                                <option>1년차</option>
                             </select>
                         </div>
                     </div>
@@ -110,9 +107,9 @@
                 </div>
                 <div class="mb-3 mt-3">
                     <label for="comment">Comments:</label>
-                    <textarea id="content" class="form-control" rows="5"></textarea>
+                    <textarea id="content" class="form-control" rows="5" placeholder="내용을 입력해주세요."></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">작성완료하기</button>
             </form>
         </div>
 
