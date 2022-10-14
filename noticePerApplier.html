@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>등록 공고 보기</title>
+    <title>공고별 지원자 확인</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -20,7 +20,19 @@
 
         h2 {
             text-align: center;
-            margin: 20px 0 30px 0;
+            margin: 20px 0 30px 50px;
+        }
+
+        .down {
+            float: right;
+            margin: 35px 60px 0 0;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5%;
+        }
+
+        .down:hover {
+            background-color: #0d6efd;
         }
 
         .resumeManage_container {
@@ -39,7 +51,7 @@
         .resumeManage_container ul li {
             border: 2px solid lightslategray;
             height: 200px;
-            padding: 50px;
+            padding: 42px 50px 0px 50px;
             transition: transform .1s;
             margin: 20PX;
         }
@@ -52,15 +64,18 @@
 
         .resumeManage_container li:hover p {}
 
-        .resumeManage_container .info {}
+        .resumeManage_container .info .category {
+            margin-bottom: 10px;
+        }
 
         .resumeManage_container .flex {
             display: flex;
-            margin-top: 10px;
         }
 
+
+
         .resumeManage_container .title {
-            padding-top: 10px;
+            padding-top: 25px;
             font-size: 30px;
         }
 
@@ -74,7 +89,6 @@
         .resumeManage_container ul li p {
             float: right;
             padding: 5px;
-            margin: 3px;
             border: 1px solid black;
             border-radius: 5%;
         }
@@ -130,47 +144,52 @@
         <div class="container mt-3">
 
             <div class="resumeManage_container">
-                <h2>등록된 공고 목록</h2>
+                <div class="down">모집마감</div>
+                <h2>공고제목</h2>
+
                 <ul>
                     <li>
                         <div class="info">
                             <div class="flex">
-                                <div class="title">공고제목</div>
+                                <div class="title">이름</div>
                                 <div class="second">
-                                    <div class="date">등록날짜</div>
-                                    <div class="skill">기술스택</div>
+                                    <div>기술스택</div>
+                                    <div class="date">지원자명</div>
+                                    <div class="skill">지원날짜</div>
                                 </div>
                             </div>
                             <div class="category">
-                                <p class="update">공고별 지원자 확인</p>
+                                <p class="update">지원한 이력서 보기</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="info">
                             <div class="flex">
-                                <div class="title">공고제목</div>
+                                <div class="title">이름</div>
                                 <div class="second">
-                                    <div class="date">등록날짜</div>
-                                    <div class="skill">기술스택</div>
+                                    <div>기술스택</div>
+                                    <div class="date">지원자명</div>
+                                    <div class="skill">지원날짜</div>
                                 </div>
                             </div>
                             <div class="category">
-                                <p class="update">공고별 지원자 확인</p>
+                                <p class="update">지원한 이력서 보기</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="info">
                             <div class="flex">
-                                <div class="title">공고제목</div>
+                                <div class="title">이름</div>
                                 <div class="second">
-                                    <div class="date">등록날짜</div>
-                                    <div class="skill">기술스택</div>
+                                    <div>기술스택</div>
+                                    <div class="date">지원자명</div>
+                                    <div class="skill">지원날짜</div>
                                 </div>
                             </div>
                             <div class="category">
-                                <p class="update">공고별 지원자 확인</p>
+                                <p class="update">지원한 이력서 보기</p>
                             </div>
                         </div>
                     </li>
