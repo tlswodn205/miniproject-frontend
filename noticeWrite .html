@@ -1,4 +1,3 @@
-<!-- 기업 공고글 쓰기 페이지 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>기업 공고글 쓰기 페이지</title>
+    <title>채용 공고 등록</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -15,13 +14,35 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/main_styles.css" rel="stylesheet" />
     <style>
-        .flex {
-            display: flex;
-            justify-content: flex-start;
+        h2 {
+            text-align: center;
+            margin: 10px 0 40px 0;
         }
 
+        .noticeWrite_container {
+            width: 1200px;
+            border: 2px solid lightslategray;
+            border-radius: 1%;
+            padding: 25px;
+        }
+
+        .noticeWrite_title {
+            margin: 10px;
+        }
+
+        .noticeWrite_title input {
+            width: 70%;
+            border: 1px solid lightslategray;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+
+
         .flex div {
-            margin: 10px 50px 10px 0;
+            margin: 10px 50px 10px 10px;
         }
     </style>
 </head>
@@ -40,8 +61,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">채용</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">채용</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                 <li><a class="dropdown-item" href="blog-home.html">프론트엔드 개발</a></li>
                                 <li><a class="dropdown-item" href="blog-post.html">백엔드 개발</a></li>
@@ -55,65 +76,65 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">구직자추천 리스트</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">기업추천 리스트</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">구독 페이지</a></li>
-                        <li class="nav-item" style="margin:0 30px 0 30px;"><button id="btnUpdate" type="button"
-                                class="btn btn-primary">로그인</button>
+                        <li class="nav-item" style="margin:0 30px 0 30px;"><button id="btnUpdate" type="button" class="btn btn-primary">로그인</button>
                         </li>
                         <li class="nav-item"><button id="btnUpdate" type="button" class="btn btn-primary">회원가입</button>
                         </li>
-                    </ul>
                 </div>
             </div>
         </nav>
         <!-- Body-->
         <div class="container mt-3">
-            <h2>기업명</h2>
-            <form action="/action_page.php">
-                <div class="flex">
+
+            <div class="noticeWrite_container">
+                <form action="/action_page.php">
+                    <h2>
+                        채용 공고 등록
+                    </h2>
                     <div>
-                        <div>
-                            급여 : <select>
-                                <option selected="selected">2천</option>
-                                <option>4천</option>
-                                <option>5천</option>
-                                <option>협의</option>
-                            </select>
-                        </div>
-                        <div>
-                            학력 : <select>
-                                <option selected="selected">고졸</option>
-                                <option>대졸</option>
-                                <option>2,3년대</option>
-                            </select>
-                        </div>
-                        <div>
-                            경력 : <select>
-                                <option selected="selected">신입</option>
-                                <option>1년차</option>
-                            </select>
+                        <div class="noticeWrite_title"> 제목 : <input id="" type="text" placeholder="제목을 입력해주세요."></br></div>
+                        <div class="flex">
+                            <div class="flex_1">
+                                급여 : <input id="" type="text" style="border: 1px solid lightslategray;"> 만원
+                            </div>
+                            <div class="flex_1">
+                                학력 : <select>
+                                    <option selected="selected">고졸</option>
+                                    <option>대졸</option>
+                                    <option>2,3년대</option>
+                                </select>
+                            </div>
+                            <div class="flex_1">
+                                경력 : <select>
+                                    <option selected="selected">신입</option>
+                                    <option>1년차</option>
+                                </select>
+                            </div>
+
+                            <div class="flex_2">
+                                <form method="get" action="form-action.html">
+                                    필요기술 :
+                                    <label><input type="checkbox" name="color" value="Python "> Python </label>
+                                    <label><input type="checkbox" name="color" value="AWS "> AWS </label>
+                                    <label><input type="checkbox" name="color" value="Git"> Git </label>
+                                    <label><input type="checkbox" name="color" value="iOS"> iOS </label>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <form method="get" action="form-action.html">
-                            <p>필요기술</p>
-                            <label><input type="checkbox" name="color" value="Python "> Python </label>
-                            <label><input type="checkbox" name="color" value="Spring Framework"> Spring
-                                Framework</label>
-                            <label><input type="checkbox" name="color" value="AWS "> AWS </label>
-                            </br>
-                            <label><input type="checkbox" name="color" value="Git"> Git </label>
-                            <label><input type="checkbox" name="color" value="iOS"> iOS </label>
-                            <label><input type="checkbox" name="color" value="HTML"> HTML </label>
-                            <label><input type="checkbox" name="color" value="MySQL"> MySQL </label>
-                            <p><input type="reset" value="Reset"></p>
-                        </form>
+                    <div class="mb-3 mt-3">
+                        <label for="comment"></label>
+                        <textarea id="content" class="form-control" rows="5" placeholder="내용을 입력해주세요." style="height: 500px;"></textarea>
                     </div>
-                </div>
-                <div class="mb-3 mt-3">
-                    <label for="comment">Comments:</label>
-                    <textarea id="content" class="form-control" rows="5" placeholder="내용을 입력해주세요."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">작성완료하기</button>
-            </form>
+                    <div>
+                        <button type="submit" class="btn btn-primary" style="margin: 0 0 0 1020px; ">작성완료하기</button>
+                    </div>
+
+                </form>
+            </div>
+            </br>
+            </br>
+
         </div>
 
 
@@ -138,13 +159,3 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <br />
-        <hr />
-        <div class="jumbotron text-center" style="margin-bottom: 0">
-            <p>Created by Cos</p>
-            <p>📞 010-2222-7777</p>
-            <p>🏴 부산 부산진구 XX동</p>
-        </div>
-</body>
-
-</html>
