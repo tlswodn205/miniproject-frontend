@@ -1,4 +1,3 @@
-<!-- 구직자 이력서 등록 페이지 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>구직자 이력서 등록 페이지</title>
+    <title>이력서 등록</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -15,13 +14,73 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/main_styles.css" rel="stylesheet" />
     <style>
-        .flex {
-            display: flex;
-            justify-content: flex-start;
+        .resumeWrite_container {
+            width: 1200px;
+            border: 2px solid lightslategray;
+            margin: 50px;
         }
 
-        .flex div {
-            margin: 10px 50px 10px 0;
+        .resumeWrite_container h2 {
+            padding-top: 20px;
+        }
+
+        .resumeWrite_container_title input {
+            width: 90%;
+            height: 60px;
+            margin-left: 5%;
+        }
+
+        .line {
+            width: 597px;
+            border-bottom: 2px solid lightslategray;
+            margin: 25px 0;
+        }
+
+        .resumeWrite_container_photo {
+            width: 150px;
+            padding-left: 10%;
+            margin: 0 30px;
+        }
+
+        .resumeWrite_container_photo p {
+            width: 117px;
+            height: 156px;
+            background-color: lightslategray;
+        }
+
+        .resumeWrite_container_info {
+            width: 80%;
+            padding: 0;
+        }
+
+        .resumeWrite_container_info .input-group span {
+            width: 100px;
+            text-align: center;
+        }
+
+        .resumeWrite_container_info .input-group span:last-child {
+            padding: 5px;
+            width: 40%;
+        }
+
+        .resumeWrite_container_info .input-group textarea {
+            width: 953px;
+            height: 300px;
+        }
+
+
+
+        .btn_insert {
+            margin: 10px 35px 20px 0;
+            padding: 8px 3%;
+            border: 1px solid lightslategray;
+            background-color: lightslategray;
+            color: white;
+            border-radius: 0.25rem;
+        }
+
+        .btn_insert:hover {
+            background-color: #0d6efd;
         }
     </style>
 </head>
@@ -66,46 +125,60 @@
         </nav>
         <!-- Body-->
         <div class="container mt-3">
-            <h2>이력서제목</h2>
-            <form action="/action_page.php">
-                <div class="mb-3 mt-3">
-
-                </div>
-                <div class="flex">
-                    <div>
-                        <form method="get" action="form-action.html">
-                            <img class="card-img-top" src="https://dummyimage.com/150x200/adb5bd/495057" alt="..." />
-
-                            <p><input type="button" value="첨부하기"></p>
-                        </form>
-                    </div>
-                    <div>
-                        이름 : <input id="" type="text"></br>
-                        이메일 : <input id="" type="text"></br>
-                        학력 : <input id="" type="text"></br>
-                        <div>
-                            <form method="get" action="form-action.html">
-                                <p>스킬</p>
-                                <label><input type="checkbox" name="color" value="Python "> Python </label>
-                                <label><input type="checkbox" name="color" value="Spring Framework"> Spring
-                                    Framework</label>
-                                <label><input type="checkbox" name="color" value="AWS "> AWS </label>
-                                </br>
-                                <label><input type="checkbox" name="color" value="Git"> Git </label>
-                                <label><input type="checkbox" name="color" value="iOS"> iOS </label>
-                                <label><input type="checkbox" name="color" value="HTML"> HTML </label>
-                                <label><input type="checkbox" name="color" value="MySQL"> MySQL </label>
-                                <p><input type="reset" value="Reset"></p>
-                            </form>
+            <div class="resumeWrite_container">
+                <h2 class="d-flex justify-content-center">이력서 등록</h2>
+                <div class="line" style="width: 100%;"></div>
+                <div class="resumeWrite_container_title"><input placeholder=" 제목을 입력해주세요."></div>
+                <div class="line" style="width: 100%;"></div>
+                <div class="d-flex justify-content-start">
+                    <div class="d-flex flex-column">
+                        <div class="resumeWrite_container_photo">
+                            <p></p>
                         </div>
-                        링크 : <input id="" type="text"></br>
-                        간단소개 : <textarea id="content" class="form-control" rows="5"></textarea></br>
+                        <div class="d-flex justify-content-end"> <button class="btn_insert">첨부하기</button></div>
+
+                    </div>
+                    <div class="resumeWrite_container_info">
+                        <div class="input-group mb-3">
+                            <span class=" input-group-text"> 이름 </span>
+                            <span>김열심</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class=" input-group-text"> 이메일 </span>
+                            <span>김열심@nate.com</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class=" input-group-text"> 학력 </span>
+                            <span>2년제</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class=" input-group-text"> 경력 </span>
+                            <span>2년차</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class=" input-group-text"> 거주지 </span>
+                            <span>부산광역시 남구 뫄뫄로 000번길 뫄뫄아파트 102/1102</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class=" input-group-text"> 기술스택 </span>
+                            <span> Python, AWS, Git, iOS</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class=" input-group-text"> 링크 </span>
+                            <input type="text" class="form-control" placeholder="깃헙 또는 블로그 주소">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="d-flex flex-column"><span class=" input-group-text"> 자기소개 </span>
+                                <textarea class="form-control" rows="5" placeholder="내용을 입력해주세요."></textarea>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">등록하기</button>
-            </form>
+                <div class="d-flex justify-content-end"><button class="btn_insert">이력서 등록하기 버튼</button>
+                </div>
+            </div>
         </div>
-
 
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
@@ -128,13 +201,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <br />
-        <hr />
-        <div class="jumbotron text-center" style="margin-bottom: 0">
-            <p>Created by Cos</p>
-            <p>📞 010-2222-7777</p>
-            <p>🏴 부산 부산진구 XX동</p>
-        </div>
+
 </body>
 
 </html>
