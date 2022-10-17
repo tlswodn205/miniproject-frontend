@@ -40,7 +40,7 @@
             border-left: 2px solid lightslategray;
             border-right: 2px solid lightslategray;
             border-bottom: 1px solid lightslategray;
-            height: 130px;
+            height: 140px;
             padding: 11px 20px 0 40px;
         }
 
@@ -69,7 +69,7 @@
         .skillCompanyMatching_container .companyname {
             width: 100%;
             margin-right: 60px;
-            padding-top: 1rem;
+            padding-top: 2rem;
             font-size: 30px;
         }
 
@@ -99,7 +99,7 @@
             float: right;
             padding: 5px 20px;
             border: 1px solid black;
-            border-radius: 5%;
+            border-radius: 0.25rem;
             background-color: white;
             margin: 0;
         }
@@ -128,8 +128,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">채용</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">채용</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                 <li><a class="dropdown-item" href="blog-home.html">프론트엔드 개발</a></li>
                                 <li><a class="dropdown-item" href="blog-post.html">백엔드 개발</a></li>
@@ -143,7 +143,8 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">구직자추천 리스트</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">기업추천 리스트</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">구독 페이지</a></li>
-                        <li class="nav-item" style="margin:0 30px 0 30px;"><button id="btnUpdate" type="button" class="btn btn-primary">로그인</button>
+                        <li class="nav-item" style="margin:0 30px 0 30px;"><button id="btnUpdate" type="button"
+                                class="btn btn-primary">로그인</button>
                         </li>
                         <li class="nav-item"><button id="btnUpdate" type="button" class="btn btn-primary">회원가입</button>
                         </li>
@@ -159,13 +160,16 @@
                     <li class="skillCompany">
                         <div class=" d-flex justify-content-between">
                             <div class="label">
-                                <label>java</label> <input onclick="getSkill(1)" name="id" type="checkbox" class="form-check-input" value="java">
-                                <label>javaScript</label> <input onclick="getSkill(2)" name="id" type="checkbox" class="form-check-input"
-                                    value="javaScript"> <label>HTML/CSS</label> <input onclick="getSkill(3)" name="id" type="checkbox"
-                                    class="form-check-input" value="HTML/CSS"> <label>MySQL</label> <input onclick="getSkill(4)" name="id"
-                                    type="checkbox" class="form-check-input" value="MySQL"> <label>AWS</label> <input onclick="getSkill(5)" name="id"
-                                    type="checkbox" class="form-check-input" value="AWS"> <label>Flutter</label> <input onclick="getSkill(6)"
-                                    name="id" type="checkbox" class="form-check-input" value="Flutter">
+                                <label>java</label> <input onclick="getSkill(1)" name="id" type="checkbox"
+                                    class="form-check-input" value="java">
+                                <label>javaScript</label> <input onclick="getSkill(2)" name="id" type="checkbox"
+                                    class="form-check-input" value="javaScript"> <label>HTML/CSS</label> <input
+                                    onclick="getSkill(3)" name="id" type="checkbox" class="form-check-input"
+                                    value="HTML/CSS"> <label>MySQL</label> <input onclick="getSkill(4)" name="id"
+                                    type="checkbox" class="form-check-input" value="MySQL"> <label>AWS</label> <input
+                                    onclick="getSkill(5)" name="id" type="checkbox" class="form-check-input"
+                                    value="AWS"> <label>Flutter</label> <input onclick="getSkill(6)" name="id"
+                                    type="checkbox" class="form-check-input" value="Flutter">
                             </div>
                             <div><button class="btn_companyDetail">기업검색</button></div>
                         </div>
@@ -183,7 +187,7 @@
                                 <div>연봉</div>
                             </div>
                             <div class="info">
-                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                                <button class="btn_companyDetail">기업 상세보기</button>
                             </div>
                             <div class="content flex">
                                 <div>기술스택
@@ -205,7 +209,7 @@
                                 <div>연봉</div>
                             </div>
                             <div class="info">
-                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                                <button class="btn_companyDetail">기업 상세보기</button>
                             </div>
                             <div class="content flex">
                                 <div>기술스택
@@ -227,7 +231,7 @@
                                 <div>연봉</div>
                             </div>
                             <div class="info">
-                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                                <button class="btn_companyDetail">기업 상세보기</button>
                             </div>
                             <div class="content flex">
                                 <div>기술스택
@@ -249,7 +253,7 @@
                                 <div>연봉</div>
                             </div>
                             <div class="info">
-                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                                <button class="btn_companyDetail">기업 상세보기</button>
                             </div>
                             <div class="content flex">
                                 <div>기술스택
@@ -271,7 +275,7 @@
                                 <div>연봉</div>
                             </div>
                             <div class="info">
-                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                                <button class="btn_companyDetail">기업 상세보기</button>
                             </div>
                             <div class="content flex">
                                 <div>기술스택

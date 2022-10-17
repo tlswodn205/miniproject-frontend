@@ -35,9 +35,9 @@
 
         .personJoin_container {
             margin: 50px;
-            width: 1200px;
+            width: 1000px;
             border: 2px solid lightslategray;
-            padding: 60px 100px;
+            padding: 60px 0;
         }
 
 
@@ -69,6 +69,11 @@
         .personJoin_container .input-group span {
             width: 130px;
             text-align: center;
+        }
+
+        .personJoin_container .input-group span:last-child {
+            padding: 5px;
+            width: 465px;
         }
 
         .custom_box {
@@ -134,9 +139,9 @@
 
         .btn_login {
             margin-top: 10px;
-            padding: 8px 205px;
+            padding: 8px 80px;
             border: 1px solid lightslategray;
-            border-radius: 5%;
+            border-radius: 0.25rem;
         }
 
         .personJoin_container .d-flex :first-child:hover {
@@ -203,7 +208,7 @@
                     <div class="line"></div>
                     <div class="input-group mb-3">
                         <span class=" input-group-text"> 아이디 </span>
-                        <input type="text" class="form-control" placeholder="">
+                        <span>아이디</span>
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text">비밀번호</span>
