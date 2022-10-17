@@ -1,4 +1,3 @@
-<!-- 메인 페이지 ( 메인사진 크기 조절 해야 함 )-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,13 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>메인</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/main_styles.css" rel="stylesheet" />
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        .main_container {
+            padding-top: 10px;
+        }
+
+        .main_container .mainNoticeTitle {
+            margin: 60px 0 40px 35%;
+            width: 400px;
+            font-size: 20px;
+            text-align: center;
+            border: 2px solid lightslategray;
+            font-weight: 900;
+            padding: 10px;
+        }
+
+        .main_container ul li {
+            padding: 12px;
+            margin: 1.5%;
+            width: 380px;
+            border: 2px solid lightslategray;
+            border-radius: 0.25rem;
+        }
+
+        .main_container ul li div {
+            margin: 5px;
+        }
+
+        .main_container .companyname {
+            margin: 10px 5px;
+            font-size: 25px;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -23,15 +58,15 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
                 <a class="navbar-brand" href="index.html">로고 이름</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
+                        class="navbar-toggler-icon"></span></button> -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">채용</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">채용</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                 <li><a class="dropdown-item" href="blog-home.html">프론트엔드 개발</a></li>
                                 <li><a class="dropdown-item" href="blog-post.html">백엔드 개발</a></li>
@@ -45,8 +80,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">구직자추천 리스트</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">기업추천 리스트</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">구독 페이지</a></li>
-                        <li class="nav-item" style="margin:0 30px 0 30px;"><button id="btnUpdate" type="button"
-                                class="btn btn-primary">로그인</button>
+                        <li class="nav-item" style="margin:0 30px 0 30px;"><button id="btnUpdate" type="button" class="btn btn-primary">로그인</button>
                         </li>
                         <li class="nav-item"><button id="btnUpdate" type="button" class="btn btn-primary">회원가입</button>
                         </li>
@@ -54,282 +88,111 @@
                 </div>
             </div>
         </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-5" style="text-align: text-center;">
-                <img src="assets/main.jpg">
-            </div>
-        </header>
-
-        <!-- Company preview section-->
-        <section class="py-5">
-            <div class="container px-5 my-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6">
-                        <div class="text-center">
-                            <h2 class="fw-bolder">기업 공고 리스트</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                                <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">기술분야</h5>
-                                </a>
-                                <p class="card-text mb-0">회사명</p>
-                                <p class="card-text mb-0">근무지</p>
-                                <p class="card-text mb-0">급여</p>
-                            </div>
-                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!--<img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                        <div class="small">
-                                            <div class="fw-bold">Kelly Rowan</div>
-                                            <div class="text-muted">March 12, 2022 &middot; 6 min read</div>
-                                        </div>-->
-                                    </div>
+        <!-- Body-->
+        <div class="container mt-3 d-flex justify-content-center">
+            <div class="main_container ">
+                <div class="main_photo"><img class="card-img-top" src="https://dummyimage.com/1300x400/adb5bd/495057" alt="..." /></div>
+                <div class="mainNoticeTitle">기업 공고 리스트</div>
+                <div class="mainNoticeList">
+                    <ul class="d-flex flex-wrap">
+                        <li>
+                            <div>
+                                <div><img class="card-img-top" src="https://dummyimage.com/400x150/adb5bd/495057" alt="..." /></div>
+                                <div class="companyname">공고 제목</div>
+                                <div class="d-flex flex-column">
+                                    <div>기업명 : </div>
+                                    <div>급여 : </div>
+                                    <div>근무지 : </div>
+                                    <div>기술스택 : </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">기술분야</h5>
-                                </a>
-                                <p class="card-text mb-0">회사명</p>
-                                <p class="card-text mb-0">근무지</p>
-                                <p class="card-text mb-0">급여</p>
-                            </div>
-                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!--<img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                        <div class="small">
-                                            <div class="fw-bold">Josiah Barclay</div>
-                                            <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
-                                        </div>-->
-                                    </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div><img class="card-img-top" src="https://dummyimage.com/400x150/adb5bd/495057" alt="..." /></div>
+                                <div class="companyname">공고 제목</div>
+                                <div class="d-flex flex-column">
+                                    <div>기업명 : </div>
+                                    <div>급여 : </div>
+                                    <div>근무지 : </div>
+                                    <div>기술스택 : </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">기술분야</h5>
-                                </a>
-                                <p class="card-text mb-0">회사명</p>
-                                <p class="card-text mb-0">근무지</p>
-                                <p class="card-text mb-0">급여</p>
-                            </div>
-                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!--<img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                        <div class="small">
-                                            <div class="fw-bold">Josiah Barclay</div>
-                                            <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
-                                        </div>-->
-                                    </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div><img class="card-img-top" src="https://dummyimage.com/400x150/adb5bd/495057" alt="..." /></div>
+                                <div class="companyname">공고 제목</div>
+                                <div class="d-flex flex-column">
+                                    <div>기업명 : </div>
+                                    <div>급여 : </div>
+                                    <div>근무지 : </div>
+                                    <div>기술스택 : </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">기술분야</h5>
-                                </a>
-                                <p class="card-text mb-0">회사명</p>
-                                <p class="card-text mb-0">근무지</p>
-                                <p class="card-text mb-0">급여</p>
-                            </div>
-                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!--<img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                        <div class="small">
-                                            <div class="fw-bold">Josiah Barclay</div>
-                                            <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
-                                        </div>-->
-                                    </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div><img class="card-img-top" src="https://dummyimage.com/400x150/adb5bd/495057" alt="..." /></div>
+                                <div class="companyname">공고 제목</div>
+                                <div class="d-flex flex-column">
+                                    <div>기업명 : </div>
+                                    <div>급여 : </div>
+                                    <div>근무지 : </div>
+                                    <div>기술스택 : </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">기술분야</h5>
-                                </a>
-                                <p class="card-text mb-0">회사명</p>
-                                <p class="card-text mb-0">근무지</p>
-                                <p class="card-text mb-0">급여</p>
-                            </div>
-                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!--<img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                        <div class="small">
-                                            <div class="fw-bold">Josiah Barclay</div>
-                                            <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
-                                        </div>-->
-                                    </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div><img class="card-img-top" src="https://dummyimage.com/400x150/adb5bd/495057" alt="..." /></div>
+                                <div class="companyname">공고 제목</div>
+                                <div class="d-flex flex-column">
+                                    <div>기업명 : </div>
+                                    <div>급여 : </div>
+                                    <div>근무지 : </div>
+                                    <div>기술스택 : </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">기술분야</h5>
-                                </a>
-                                <p class="card-text mb-0">회사명</p>
-                                <p class="card-text mb-0">근무지</p>
-                                <p class="card-text mb-0">급여</p>
-                            </div>
-                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!--<img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                        <div class="small">
-                                            <div class="fw-bold">Josiah Barclay</div>
-                                            <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
-                                        </div>-->
-                                    </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div><img class="card-img-top" src="https://dummyimage.com/400x150/adb5bd/495057" alt="..." /></div>
+                                <div class="companyname">공고 제목</div>
+                                <div class="d-flex flex-column">
+                                    <div>기업명 : </div>
+                                    <div>급여 : </div>
+                                    <div>근무지 : </div>
+                                    <div>기술스택 : </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">기술분야</h5>
-                                </a>
-                                <p class="card-text mb-0">회사명</p>
-                                <p class="card-text mb-0">근무지</p>
-                                <p class="card-text mb-0">급여</p>
-                            </div>
-                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!--<img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                        <div class="small">
-                                            <div class="fw-bold">Josiah Barclay</div>
-                                            <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
-                                        </div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">기술분야</h5>
-                                </a>
-                                <p class="card-text mb-0">회사명</p>
-                                <p class="card-text mb-0">근무지</p>
-                                <p class="card-text mb-0">급여</p>
-                            </div>
-                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!--<img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                        <div class="small">
-                                            <div class="fw-bold">Josiah Barclay</div>
-                                            <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
-                                        </div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                                <a class="text-decoration-none link-dark stretched-link" href="#!">
-                                    <h5 class="card-title mb-3">기술분야</h5>
-                                </a>
-                                <p class="card-text mb-0">회사명</p>
-                                <p class="card-text mb-0">근무지</p>
-                                <p class="card-text mb-0">급여</p>
-                            </div>
-                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                <div class="d-flex align-items-end justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!--<img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                        <div class="small">
-                                            <div class="fw-bold">Evelyn Martinez</div>
-                                            <div class="text-muted">April 2, 2022 &middot; 10 min read</div>
-                                        </div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-dark py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0 text-white">Copyright &copy; Your Website 2022</div>
-                </div>
-                <div class="col-auto">
-                    <a class="link-light small" href="#!">Privacy</a>
-                    <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#!">Terms</a>
-                    <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#!">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <br />
-    <hr />
-    <div class="jumbotron text-center" style="margin-bottom: 0">
-        <p>Created by Cos</p>
-        <p>📞 010-2222-7777</p>
-        <p>🏴 부산 부산진구 XX동</p>
-    </div>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0 text-white">Copyright &copy; Your Website 2022</div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
