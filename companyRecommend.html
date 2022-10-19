@@ -32,12 +32,15 @@
         }
 
         .companyRecommand_container ul li {
-            border-top: 2px solid lightslategray;
-            border-left: 2px solid lightslategray;
-            border-right: 2px solid lightslategray;
-            border-bottom: 1px solid lightslategray;
+            border-right: solid lightslategray;
+            border-left: solid lightslategray;
+            border-bottom: solid lightslategray;
             height: 150px;
             padding: 15px 20px 0 50px;
+        }
+
+        .companyRecommand_container ul li:first-child {
+            border-top: 2px solid lightslategray;
         }
 
         .companyRecommand_container li:hover {
@@ -46,8 +49,12 @@
         }
 
         .companyRecommand_container .companyname {
-            padding-right: 30px;
             font-size: 25px;
+        }
+
+        .companyRecommand_container .info {
+            margin-left: 30px;
+            width: 85%;
         }
 
         .companyRecommand_container .title {
@@ -68,13 +75,13 @@
             border: none;
         }
 
-        .companyRecommand_container .info .btn_companyDetail {
+        .companyRecommand_container .category .btn_companyDetail {
             float: right;
             padding: 5px 20px;
             border: 1px solid black;
-            border-radius: 5%;
+            border-radius: 0.25rem;
             background-color: white;
-            margin: 80px 0 0 220px;
+            margin-top: 40px;
         }
 
         .companyRecommand_container li:hover .btn_companyDetail {
@@ -101,8 +108,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">채용</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">채용</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                 <li><a class="dropdown-item" href="blog-home.html">프론트엔드 개발</a></li>
                                 <li><a class="dropdown-item" href="blog-post.html">백엔드 개발</a></li>
@@ -116,8 +123,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">구직자추천 리스트</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">기업추천 리스트</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">구독 페이지</a></li>
-                        <li class="nav-item" style="margin:0 30px 0 30px;"><button id="btnUpdate" type="button"
-                                class="btn btn-primary">로그인</button>
+                        <li class="nav-item" style="margin:0 30px 0 30px;"><button id="btnUpdate" type="button" class="btn btn-primary">로그인</button>
                         </li>
                         <li class="nav-item"><button id="btnUpdate" type="button" class="btn btn-primary">회원가입</button>
                         </li>
@@ -137,6 +143,9 @@
                         </div>
                         <div class="info">
                             <div class="title">최신 공고 제목</div>
+                            <div class="category">
+                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                            </div>
                             <div class="content d-flex justify-content-start">
                                 <div>경력</div>
                                 <div>학력</div>
@@ -148,9 +157,6 @@
                                 </div>
                                 <div> 자바 , 파이썬</div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
                         </div>
                     </li>
                     <li class="d-flex justify-content-start">
@@ -160,6 +166,9 @@
                         </div>
                         <div class="info">
                             <div class="title">최신 공고 제목</div>
+                            <div class="category">
+                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                            </div>
                             <div class="content d-flex justify-content-start">
                                 <div>경력</div>
                                 <div>학력</div>
@@ -171,9 +180,6 @@
                                 </div>
                                 <div> 자바 , 파이썬</div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
                         </div>
                     </li>
                     <li class="d-flex justify-content-start">
@@ -183,6 +189,9 @@
                         </div>
                         <div class="info">
                             <div class="title">최신 공고 제목</div>
+                            <div class="category">
+                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                            </div>
                             <div class="content d-flex justify-content-start">
                                 <div>경력</div>
                                 <div>학력</div>
@@ -194,9 +203,6 @@
                                 </div>
                                 <div> 자바 , 파이썬</div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
                         </div>
                     </li>
                     <li class="d-flex justify-content-start">
@@ -206,6 +212,9 @@
                         </div>
                         <div class="info">
                             <div class="title">최신 공고 제목</div>
+                            <div class="category">
+                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                            </div>
                             <div class="content d-flex justify-content-start">
                                 <div>경력</div>
                                 <div>학력</div>
@@ -217,9 +226,6 @@
                                 </div>
                                 <div> 자바 , 파이썬</div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
                         </div>
                     </li>
                     <li class="d-flex justify-content-start">
@@ -229,6 +235,9 @@
                         </div>
                         <div class="info">
                             <div class="title">최신 공고 제목</div>
+                            <div class="category">
+                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                            </div>
                             <div class="content d-flex justify-content-start">
                                 <div>경력</div>
                                 <div>학력</div>
@@ -240,9 +249,6 @@
                                 </div>
                                 <div> 자바 , 파이썬</div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
                         </div>
                     </li>
                     <li class="d-flex justify-content-start">
@@ -252,6 +258,9 @@
                         </div>
                         <div class="info">
                             <div class="title">최신 공고 제목</div>
+                            <div class="category">
+                                <button class="btn_companyDetail">구직자 정보 보기</button>
+                            </div>
                             <div class="content d-flex justify-content-start">
                                 <div>경력</div>
                                 <div>학력</div>
@@ -263,124 +272,6 @@
                                 </div>
                                 <div> 자바 , 파이썬</div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-start">
-                        <div class="d-flex flex-column">
-                            <div class="companyname">기업이름</div>
-                            <div>추천수 : 0</div>
-                        </div>
-                        <div class="info">
-                            <div class="title">최신 공고 제목</div>
-                            <div class="content d-flex justify-content-start">
-                                <div>경력</div>
-                                <div>학력</div>
-                                <div>근무지</div>
-                                <div>연봉</div>
-                            </div>
-                            <div class="content d-flex justify-content-start">
-                                <div>기술스택
-                                </div>
-                                <div> 자바 , 파이썬</div>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-start">
-                        <div class="d-flex flex-column">
-                            <div class="companyname">기업이름</div>
-                            <div>추천수 : 0</div>
-                        </div>
-                        <div class="info">
-                            <div class="title">최신 공고 제목</div>
-                            <div class="content d-flex justify-content-start">
-                                <div>경력</div>
-                                <div>학력</div>
-                                <div>근무지</div>
-                                <div>연봉</div>
-                            </div>
-                            <div class="content d-flex justify-content-start">
-                                <div>기술스택
-                                </div>
-                                <div> 자바 , 파이썬</div>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-start">
-                        <div class="d-flex flex-column">
-                            <div class="companyname">기업이름</div>
-                            <div>추천수 : 0</div>
-                        </div>
-                        <div class="info">
-                            <div class="title">최신 공고 제목</div>
-                            <div class="content d-flex justify-content-start">
-                                <div>경력</div>
-                                <div>학력</div>
-                                <div>근무지</div>
-                                <div>연봉</div>
-                            </div>
-                            <div class="content d-flex justify-content-start">
-                                <div>기술스택
-                                </div>
-                                <div> 자바 , 파이썬</div>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-start">
-                        <div class="d-flex flex-column">
-                            <div class="companyname">기업이름</div>
-                            <div>추천수 : 0</div>
-                        </div>
-                        <div class="info">
-                            <div class="title">최신 공고 제목</div>
-                            <div class="content d-flex justify-content-start">
-                                <div>경력</div>
-                                <div>학력</div>
-                                <div>근무지</div>
-                                <div>연봉</div>
-                            </div>
-                            <div class="content d-flex justify-content-start">
-                                <div>기술스택
-                                </div>
-                                <div> 자바 , 파이썬</div>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-start">
-                        <div class="d-flex flex-column">
-                            <div class="companyname">기업이름</div>
-                            <div>추천수 : 0</div>
-                        </div>
-                        <div class="info">
-                            <div class="title">최신 공고 제목</div>
-                            <div class="content d-flex justify-content-start">
-                                <div>경력</div>
-                                <div>학력</div>
-                                <div>근무지</div>
-                                <div>연봉</div>
-                            </div>
-                            <div class="content d-flex justify-content-start">
-                                <div>기술스택
-                                </div>
-                                <div> 자바 , 파이썬</div>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <button class="btn_companyDetail">구직자 정보 보기</button>
                         </div>
                     </li>
                 </ul>

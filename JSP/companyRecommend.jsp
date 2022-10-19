@@ -21,12 +21,15 @@
             }
 
             .companyRecommand_container ul li {
-                border-top: 2px solid lightslategray;
-                border-left: 2px solid lightslategray;
-                border-right: 2px solid lightslategray;
-                border-bottom: 1px solid lightslategray;
+                border-right: solid lightslategray;
+                border-left: solid lightslategray;
+                border-bottom: solid lightslategray;
                 height: 150px;
                 padding: 15px 20px 0 50px;
+            }
+
+            .companyRecommand_container ul li:first-child {
+                border-top: 2px solid lightslategray;
             }
 
             .companyRecommand_container li:hover {
@@ -35,8 +38,12 @@
             }
 
             .companyRecommand_container .companyname {
-                padding-right: 30px;
                 font-size: 25px;
+            }
+
+            .companyRecommand_container .info {
+                margin-left: 30px;
+                width: 85%;
             }
 
             .companyRecommand_container .title {
@@ -57,13 +64,13 @@
                 border: none;
             }
 
-            .companyRecommand_container .info .btn_companyDetail {
+            .companyRecommand_container .category .btn_companyDetail {
                 float: right;
                 padding: 5px 20px;
                 border: 1px solid black;
-                border-radius: 5%;
+                border-radius: 0.25rem;
                 background-color: white;
-                margin: 80px 0 0 220px;
+                margin-top: 40px;
             }
 
             .companyRecommand_container li:hover .btn_companyDetail {
@@ -84,8 +91,11 @@
                                 <div class="companyname">${company.companyName} </div>
                                 <div>추천수 : ${company.recommendCount}</div>
                             </div>
-                            <div class="info">
+                            <div class="category">
                                 <div class="title">${company.noticeTitle}</div>
+                                <div class="info">
+                                    <button type="button" class="btn_companyDetail">구직자 정보 보기</button>
+                                </div>
                                 <div class="content d-flex justify-content-start">
                                     <div>${company.career==0 ? "신입": company.career}</div>
                                     <div>${company.degree}</div>
@@ -102,9 +112,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="info">
-                                <button type="button" class="btn_companyDetail">구직자 정보 보기</button>
-                            </div>
+
                     </c:forEach>
                     </li>
                 </ul>
